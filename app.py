@@ -3,7 +3,7 @@ import time
 from ai_client import ask_ai
 
 st.set_page_config(
-    page_title="AI Travel Planner",
+    page_title=("AI Travel Planner"),
     page_icon="✈️",
     layout="wide"
 )
@@ -39,13 +39,13 @@ st.sidebar.write("Built with:")
 st.sidebar.write("- Python")
 st.sidebar.write("- Streamlit")
 st.sidebar.write("- Ollama")
-st.title("✈️ AI Travel Planner")
+st.title("✈️ AI Chaudary Sahib Travel Wrecker")
 
 st.write("Generate travel itineraries using AI running locally with Ollama.")
 
 trip_request = st.text_input(
-    "Where would you like to go?",
-    value=st.session_state.get("trip", ""),
+    "Where would you like to go Chaudary Sahib?",
+    value=st.session_state.get("language", ""),
 )
 
 if st.button("Generate Plan"):
